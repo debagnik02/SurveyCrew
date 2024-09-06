@@ -1,0 +1,126 @@
+/* profile.css */
+
+/* Container for the entire profile page */
+.profile-page {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #f4f4f9;
+    min-height: 100vh;
+}
+
+/* Styling for the loading state */
+.profile-page__loading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+/* Styling for user info section */
+.profile-page__info {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* User name styling */
+.profile-page__name {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+}
+
+/* User email styling */
+.profile-page__email {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+}
+
+/* Heading styling */
+.profile-page__heading {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Container for the survey list */
+.profile-page__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Styling for each survey item */
+.profile-page__survey-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 15px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.profile-page__survey-item:hover {
+    background: #f0f0f0;
+    transform: scale(1.02);
+}
+
+/* Survey title styling */
+.profile-page__survey-title {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+}
+
+/* Survey description styling */
+.profile-page__survey-description {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* No surveys message */
+.profile-page__no-surveys {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Styling for the Create Survey button */
+.profile-page__create-button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.profile-page__create-button:hover {
+    background: #0056b3;
+}
+
+/* Styling for the Log Out button */
+.profile-page__logout-button {
+    background: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    position: absolute;
+    top: 20px;
+    right: 20px; /* Change from left to right */
+}
+
+.profile-page__logout-button:hover {
+    background: #c82333;
+}
+

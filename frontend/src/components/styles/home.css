@@ -1,0 +1,96 @@
+/* styles/home.css */
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .logo {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 800px; /* Adjust width as needed */
+  }
+  
+  .get-started-button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #007bff; /* Primary color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .get-started-button:hover {
+    background-color: #0056b3; /* Darker shade of primary color */
+  }
+  /* styles/home.css */
+
+.home-container {
+  position: relative; /* Add relative positioning */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  max-width: 800px; /* Adjust width as needed */
+}
+
+.get-started-button {
+  font-size: 1rem;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #007bff; /* Primary color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.get-started-button:hover {
+  background-color: #0056b3; /* Darker shade of primary color */
+}
+
+/* Style for logout button */
+.logout-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 0.9rem;
+  padding: 5px 10px;
+  color: #fff;
+  background-color: #dc3545; /* Red color for logout button */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #c82333; /* Darker shade of red */
+}

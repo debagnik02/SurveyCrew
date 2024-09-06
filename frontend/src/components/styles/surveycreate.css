@@ -1,0 +1,158 @@
+/* General Page Layout */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e9ecef; /* Slightly different background color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden; /* Prevent scrolling of the body */
+}
+
+/* Survey Form Container */
+.survey-form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow */
+  width: 600px; /* Fixed width */
+  max-width: 100%;
+  margin: 20px;
+  box-sizing: border-box;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 90vh; /* Limit the height of the form to fit within the viewport */
+}
+
+/* Form Heading */
+.survey-form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px; /* Larger heading size */
+  color: #333333;
+}
+
+/* Form Elements */
+.survey-form div {
+  margin-bottom: 20px;
+}
+
+.survey-form label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  display: block;
+  color: #333333;
+}
+
+.survey-form input[type="text"],
+.survey-form textarea,
+.survey-form select {
+  width: 100%;
+  padding: 12px; /* Increased padding */
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  font-size: 16px;
+  color: #333333;
+}
+
+.survey-form textarea {
+  height: 120px; /* Slightly taller textarea */
+  resize: vertical;
+}
+
+/* Buttons */
+.survey-form button {
+  padding: 12px 24px; /* Increased padding */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s; /* Smooth transition */
+  margin-top: 10px; /* Margin for spacing between buttons */
+}
+
+.survey-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Question Container */
+.question {
+  background-color: #f9f9f9;
+  padding: 20px; /* Increased padding */
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Option Buttons */
+.question button {
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 8px 16px; /* Increased padding */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition */
+}
+
+.question button:hover {
+  background-color: #0056b3;
+}
+
+/* Option and Question Styling */
+.option {
+  margin-bottom: 10px; /* Spacing between options */
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Checkbox and Radio Button Alignment */
+.question label input[type="checkbox"],
+.question label input[type="radio"] {
+  margin-right: 10px;
+}
+
+/* Form Buttons Alignment */
+.survey-form .form-buttons {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center;
+  margin-top: 20px;
+}
+
+.survey-form .form-buttons button {
+  width: 100%;
+  margin-bottom: 10px; /* Spacing between buttons */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .survey-form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .survey-form h1 {
+    font-size: 22px;
+  }
+
+  .survey-form button {
+    font-size: 14px;
+  }
+
+  .survey-form input[type="text"],
+  .survey-form textarea,
+  .survey-form select {
+    font-size: 14px;
+  }
+}

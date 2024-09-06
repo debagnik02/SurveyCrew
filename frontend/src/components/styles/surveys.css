@@ -1,0 +1,95 @@
+/* General page styling */
+.surveys-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    position: relative; /* Ensure positioning context for the logout button */
+  }
+  
+  /* Heading */
+  .surveys-page__heading {
+    text-align: center;
+    color: #333;
+    margin: 60px 0 20px; /* Ensure enough space from the top */
+  }
+  
+  /* Logout Button */
+  .surveys-page__logout-button {
+    position: fixed; /* Use fixed positioning to keep it in the top-right corner */
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    z-index: 1000; /* Ensure it’s above other content */
+  }
+  
+  .surveys-page__logout-button:hover {
+    background-color: #e60000;
+  }
+  
+  /* Surveys List */
+  .surveys-page__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Survey Item */
+  .surveys-page__survey-item {
+    border: 1px solid #eee;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.surveys-page__survey-title {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.surveys-page__survey-description {
+    color: #666;
+    font-size: 16px;
+}
+  /* No Surveys Message */
+  .surveys-page__no-surveys {
+    text-align: center;
+    color: #888;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  /* Create Survey Button */
+  .surveys-page__create-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 25px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1000; /* Ensure it’s above other content */
+  }
+  
+  .surveys-page__create-button:hover {
+    background-color: #45a049;
+  }
+  

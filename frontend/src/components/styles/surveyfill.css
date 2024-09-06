@@ -1,0 +1,116 @@
+/* General Page Layout */
+.surveyfill-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  height: 100%;
+  overflow-y: auto; /* Ensure scrolling if content overflows */
+}
+
+/* Header */
+.surveyfill-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.surveyfill-header h1 {
+  font-size: 32px;
+  color: #333;
+}
+
+/* Survey Content */
+.surveyfill-content {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.surveyfill-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.surveyfill-description {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.surveyfill-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.surveyfill-question {
+  margin-bottom: 20px;
+}
+
+.surveyfill-question-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.surveyfill-required {
+  color: #ff0000;
+  font-weight: bold;
+}
+
+.surveyfill-input {
+  width: calc(100% - 20px);
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+}
+
+.surveyfill-options {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.surveyfill-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.surveyfill-input-option {
+  margin-right: 10px;
+  accent-color: #007bff; /* Custom color for checkboxes/radio buttons */
+  transform: scale(1.5); /* Increase size of checkboxes/radio buttons */
+}
+
+.surveyfill-option-text {
+  font-size: 16px;
+  color: #333;
+}
+
+/* Submit Button */
+.surveyfill-submit {
+  padding: 12px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px; /* Spacing above button */
+}
+
+.surveyfill-submit:hover {
+  background-color: #0056b3;
+}
